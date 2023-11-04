@@ -1,0 +1,233 @@
+@font-face {
+    font-family: "shabnam";
+    src: url("../fonts/Shabnam-FD.woff2"), format(".woff");
+}
+
+html {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "shabnam";
+    box-sizing: inherit;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    height: 20px;
+    width: 85%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(100, 181, 246);
+    border-radius: 20px;
+    margin: 40px 0;
+}
+
+.header-title {
+    line-height: 70px;
+    padding: 0 20px;
+    color: black;
+    text-align: center;
+    align-items: center;
+}
+
+.mian {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 14px;
+    margin-top: 20px;
+}
+
+.information-user {
+    background-color: rgba(100, 181, 246, 50%);
+    width: 250px;
+    height: 50px;
+    line-height: 50px;
+    padding: 5px 20px;
+    border-radius: 20px;
+    margin-top: 9px;
+}
+
+.label {
+    font-weight: 300;
+}
+
+.label-value {
+    font-size: 18px;
+    font-weight: bold;
+
+}
+
+.dormitory-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+    gap: 10px;
+}
+
+.dormitory-1 {
+    width: 250px;
+
+}
+
+.dormitory-tilte {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-color: rgba(100, 181, 246, 50%);
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: 4px 8px 20px 0 gray;
+    cursor: pointer;
+}
+
+.dormitory-text {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+   
+}
+
+.chevron-left {
+    width: 27px;
+    height: 27px;
+    transition: all 120ms 20ms;
+}
+
+.chevron-left-active {
+    transform: rotate(180deg);
+}
+
+.dormitory-content {
+    box-shadow: 4px 8px 20px 0 grey;
+    border-radius: 15px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 120ms 20ms;
+    min-height: 100px;
+    max-height: 100px;
+    overflow-y: scroll;
+
+}
+
+.dormitory-content-active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(4px);
+}
+
+.dormitory-list {
+    list-style: none;
+    padding: 2px 18px;
+}
+
+.dormitory-item {
+    font-size: 18px;
+    padding: 4px 0;
+}
+
+.dormitory-link {
+    color: black;
+    transition: all 120ms 20ms;
+    padding: 0 5px;
+}
+
+.dormitory-link:hover {
+    color: rgba(100, 181, 246, 90%);
+    font-size: 19px;
+    font-weight: 700;
+
+}
+.rooms-name-none{
+ display: none;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    padding-bottom: 50px;
+}
+
+
+
+.btn-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 190px;
+    height: 30px ;
+    background-color: rgba(100, 181, 246, 70%);
+    color: black;
+    border-radius: 20px;
+    text-align: center;
+    padding: 5px 10px;
+    font-size: 20px;
+    font-weight: bold;
+    transition: all 120ms 20ms;
+}
+.btn-link:hover{
+    background-color: rgba(100, 181, 246, 90%);
+        width: 215px;
+        height: 42px;
+        font-size: 22px;
+}
+
+
+
+
+
+
+
+
+
+/*  Media Screen */
+
+@media screen and (max-width : 1220px) {
+    .dormitory-tilte{
+        margin-top: 20px;
+    }
+}
+
+
+@media screen and (max-width : 992px) {
+
+}
+@media screen and (max-width : 730px) {
+    .mian{
+        justify-content: center;
+    }
+}
+
+
+@media screen and (max-width : 633px) {
+    .dormitory-wrapper{
+        justify-content: center;
+        padding-bottom: 50px;
+    }
+    .btn{
+        margin-top: 0px;
+    }
+}
+
+
+@media screen and (max-width : 512px) {
+
+}
+
